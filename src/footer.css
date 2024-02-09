@@ -1,0 +1,129 @@
+:root{
+    --cyan: #98e0ca;
+    --DarkModerateCyan: hsl(168, 34%, 41%);
+    --white: hsl(0, 0%, 100%);
+}
+
+.grid-gallery{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-gallery .bg-footer{
+    width: 100%;
+    height: 13em;
+}
+
+.mb, .orng, .cone, .sc{
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.mb{
+    background-image: url(../public/images/mobile/image-gallery-milkbottles.jpg);
+}
+
+.orng{
+    background-image: url(../public/images/mobile/image-gallery-orange.jpg);
+}
+
+.cone{
+    background-image: url(../public/images/mobile/image-gallery-cone.jpg);
+}
+
+.sc{
+    background-image: url(../public/images/mobile/image-gallery-sugar-cubes.jpg);
+}
+
+.footer{
+    background-color: var(--cyan);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3.2em 0 5em 0;
+    gap: 6em;
+}
+
+.footer .brand-nav{
+    display: flex;
+    flex-direction: column;
+    gap: 2.1em;
+}
+
+.footer .brand-nav img{
+    transform: scale(0.6);
+}
+
+.footer .brand-nav ul{
+    display: flex;
+    gap: 3.5em;
+}
+
+.footer .brand-nav ul li{
+    list-style: none;
+}
+
+.footer .brand-nav ul li a{
+    text-decoration: none;
+    display: block;
+    color: var(--DarkModerateCyan);
+    font-size: 1.2em;
+    transition: 300ms all ease;
+}
+
+.footer .brand-nav ul li a:hover{
+    color: var(--white);
+    transform: scale(1.1);
+}
+
+.footer .social-media{
+    display: flex;
+    gap: 2em;
+}
+
+.footer .social-media img{
+    cursor: pointer;
+    transition: 300ms all ease;
+}
+
+.footer .social-media img:hover{
+    transform: scale(1.15);
+}
+
+@media only screen and (min-width: 800px) {
+    .grid-gallery{
+        display: flex;
+        width: 100%;
+    }
+
+    .grid-gallery .bg-footer{
+        height: 30em;
+        width: 100%;
+    }
+
+    .mb{
+        background-image: url(../public/images/desktop/image-gallery-milkbottles.jpg);
+    }
+    
+    .orng{
+        background-image: url(../public/images/desktop/image-gallery-orange.jpg);
+    }
+    
+    .cone{
+        background-image: url(../public/images/desktop/image-gallery-cone.jpg);
+    }
+    
+    .sc{
+        background-image: url(../public/images/desktop/image-gallery-sugarcubes.jpg);
+    }
+
+    .footer .brand-nav ul{
+        gap: 6em;
+    }
+
+    .footer .social-media{
+        gap: 2.5em;
+    }
+}

@@ -1,0 +1,100 @@
+:root{
+    --white: hsl(0, 0%, 100%);
+    --yellow: hsl(51, 100%, 49%);
+    --veryDarkDesaturatedBlue: hsl(212, 27%, 19%);
+    --titleFont: 'Fraunces', serif;
+    --descriptionFont: 'Barlow', sans-serif;
+}
+
+.home{
+    background-image: url(../public/images/mobile/image-header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 800px;
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6.2em;
+    position: relative;
+}
+
+.home .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.home .navbar img{
+    cursor: pointer;
+}
+
+.home .navbar .nav-info{
+    display: none;
+}
+
+.home .main-title{
+    color: var(--white);
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 2.9em;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+@media only screen and (min-width: 1115px){
+    .home{
+        background-image: url(../public/images/desktop/image-header.jpg);
+        min-height: 110vh;
+        padding: 2em;
+    }
+
+    .home .navbar .hamg{
+        display: none;
+    }
+
+    .home .navbar .nav-info{
+        display: block;
+        display: flex;
+        align-items: center;
+        gap: 3em;
+    }
+
+    .home .navbar .nav-info li{
+        list-style: none;
+    }
+
+    .home .navbar .nav-info li .link{
+        display: block;
+        text-decoration: none;
+        color: var(--white);
+        font-size: 1.2em;
+        transition: 300ms all ease;
+    }
+
+    .home .navbar .nav-info li .btn{
+        display: block;
+        text-decoration: none;
+        font-size: 1.2em;
+        color: var(--veryDarkDesaturatedBlue);
+        background-color: var(--white);
+        padding: 0.6em 1.4em;
+        border-radius: 1.2em;
+        transition: 300ms all ease;
+    }
+
+    .home .navbar .nav-info li .link:hover{
+        color: var(--yellow);
+        transform: scale(1.1);
+    }
+
+    .home .navbar .nav-info li .btn:hover{
+        filter: opacity(0.8);
+        transform: scale(1.1);
+    }
+
+    .home .main-title{
+        font-size: calc(2rem + 2vw + 1vh);
+    }
+}

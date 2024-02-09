@@ -1,0 +1,91 @@
+:root{
+    --white: hsl(0, 0%, 100%);
+    --yellow: hsl(51, 100%, 49%);
+    --darkGrayishBlue: hsl(232, 10%, 55%);
+    --veryDarkDesaturatedBlue: hsl(212, 27%, 19%);
+}
+
+.modal{
+    background-color: var(--white);
+    width: 21.8em;
+    position: absolute;
+    top: 7.8em;
+    right: 1.5em;
+    padding: 2em;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.fadeIn-slideDown{
+    animation: fadeInSlideDown .8s ease-in;
+    display: flex;
+}
+
+.modal:after{
+    content: '';
+    width: 3.5em;
+    height: 3.5em;
+    background: linear-gradient(45deg, var(--white) 50%, transparent 50%);
+    position: absolute;
+    transform: rotate(45deg);
+    right: -28px;
+    top: -28px;
+}
+
+.modal .nav-info-modal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.1em;
+}
+
+.modal .nav-info-modal li{
+    list-style: none;
+}
+
+.modal .nav-info-modal li .link{
+    text-decoration: none;
+    color: var(--darkGrayishBlue);
+    font-size: 1.1em;
+    transition: 300ms all ease;
+}
+
+.modal .nav-info-modal li .link:hover{
+    color: var(--yellow);
+}
+
+.modal .nav-info-modal li .btn{
+    text-decoration: none;
+    color: var(--veryDarkDesaturatedBlue);
+    background-color: var(--yellow);
+    font-size: 1.1em;
+    transition: 300ms all ease;
+    padding: 0.6em 1.7em;
+    border-radius: 1.2em;
+    display: block;
+}
+
+.modal .nav-info-modal li .btn:hover{
+    filter: brightness(120%);
+    transform: scale(1.1);
+}
+
+@keyframes fadeInSlideDown {
+    0%{
+        top: 5.8em;
+        opacity: 0;
+    }
+
+    90%{
+        top: 7.8em;
+        opacity: 1;
+    }
+}
+
+@media only screen and (min-width: 1115px) {
+    .modal{
+        display: none;
+    }
+}

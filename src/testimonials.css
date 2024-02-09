@@ -1,0 +1,101 @@
+:root{
+    --veryDarkGrayishBlue: hsl(213, 9%, 39%);
+    --darkGrayishBlue: hsl(232, 10%, 55%);
+    --veryDarkDesaturatedBlue: hsl(212, 27%, 19%);
+    --titleFont: 'Fraunces', serif;
+    --grayishBlue: hsl(210, 4%, 67%);
+}
+
+.testimonials-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4em;
+    margin: 3.5em 0;
+}
+
+.testimonials-container h2{
+    text-transform: uppercase;
+    color: var(--darkGrayishBlue);
+    letter-spacing: 2px;
+}
+
+.testimonials-container .test-flex{
+    display: flex;
+    flex-direction: column;
+    gap: 5em;
+}
+
+.testimonials-container .test-flex .testimonial-temp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1.7em;
+    padding: 0 2em;
+}
+
+.testimonials-container .test-flex .testimonial-temp img{
+    border-radius: 50%;
+    width: 5em;
+}
+
+.testimonials-container .test-flex .testimonial-temp .test-description{
+    color: var(--veryDarkGrayishBlue);
+    line-height: 1.6em;
+    font-size: 1.1em;
+}
+
+.testimonials-container .test-flex .testimonial-temp .test-person{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7em;
+}
+
+.testimonials-container .test-flex .testimonial-temp .test-person .cxName{
+    font-family: var(--titleFont);
+    font-weight: 900;
+    color: var(--veryDarkDesaturatedBlue);
+    font-size: 1.2em;
+}
+
+.testimonials-container .test-flex .testimonial-temp .test-person .jobspot{
+    font-size: 1.15em;
+    color: var(--grayishBlue);
+}
+
+@media only screen and (min-width: 800px) {
+    .testimonials-container{
+        margin: 11em 0;
+    }
+
+    .testimonials-container h2{
+        font-size: 1.7em;
+    }
+
+    .testimonials-container .test-flex{
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 3em;
+    }
+
+    .testimonials-container .test-flex .testimonial-temp{
+        min-width: 18em;
+        min-height: 20em;
+    }
+}
+
+@media only screen and (min-width: 1115px) {
+    .testimonials-container{
+        padding: 0 5em;
+    }
+
+    .testimonials-container .test-flex .testimonial-temp{
+        padding: 1em;
+    }
+}
