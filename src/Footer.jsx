@@ -10,7 +10,7 @@ function Footer() {
         </div>
         <div className="footer">
             <div className="brand-nav">
-                <img src="/images/logoFooter.svg" alt="Footer logo" />
+                <img src="public/images/logoFooter.svg" alt="Footer logo" />
                 <ul>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Services</a></li>
@@ -18,10 +18,10 @@ function Footer() {
                 </ul>
             </div>
             <div className="social-media">
-                <img src="/images/icon-facebook.svg" alt="Facebook" />
-                <img src="/images/icon-instagram.svg" alt="Instagram" />
-                <img src="/images/icon-twitter.svg" alt="Twitter" />
-                <img src="/images/icon-pinterest.svg" alt="Pinterest" />
+                <img src="public/images/icon-facebook.svg" alt="Facebook" />
+                <img src="public/images/icon-instagram.svg" alt="Instagram" />
+                <img src="public/images/icon-twitter.svg" alt="Twitter" />
+                <img src="public/images/icon-pinterest.svg" alt="Pinterest" />
             </div>
         </div>
     </>

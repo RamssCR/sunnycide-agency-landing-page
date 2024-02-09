@@ -25,7 +25,7 @@ export const bgGallery2Info = {
 export const testimonialsCx = [
     {
         id: 1,
-        imgSource: "/images/image-emily.jpg",
+        imgSource: "public/images/image-emily.jpg",
         alt: "Emily",
         testimonial: "We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.",
         cxName: "Emily R.",
@@ -33,7 +33,7 @@ export const testimonialsCx = [
     },
     {
         id: 2,
-        imgSource: "/images/image-thomas.jpg",
+        imgSource: "public/images/image-thomas.jpg",
         alt: "Thomas",
         testimonial: "Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.",
         cxName: "Thomas S.",
@@ -41,7 +41,7 @@ export const testimonialsCx = [
     },
     {
         id: 3,
-        imgSource: "/images/image-jennie.jpg",
+        imgSource: "public/images/image-jennie.jpg",
         alt: "Jennie",
         testimonial: "Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!",
         cxName: "Jennie F.",

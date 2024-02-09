@@ -20,11 +20,11 @@ function Gallery() {
 
     return <div className="gallery">
         <div className="flex-reverse">
-            <img src="/images/mobile/image-transform.jpg" alt="egg" />
+            <img src="public/images/mobile/image-transform.jpg" alt="egg" />
             <Articles title={gallery1Info.title} description={gallery1Info.description} />
         </div>
         <div className="flex">
-            <img src="/images/mobile/image-stand-out.jpg" alt="coup" /> 
+            <img src="public/images/mobile/image-stand-out.jpg" alt="coup" /> 
             <Articles title={gallery2Info.title} description={gallery2Info.description} />
         </div>
         {/*Part 2*/}
