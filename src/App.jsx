@@ -1,4 +1,4 @@
-import Home from './home'
+import Home from './Home'
 import Gallery from './Gallery'
 import Testimonials from './Testimonials'
 import './App.css'
